@@ -27,6 +27,10 @@ let percent = [80,80,44,85,80,110];
 // .circle 대상들 선택
 const circle = document.querySelectorAll(".circle");
 
+// 신라호텔 태블릿 버튼 선택
+const tabletShilla = document.querySelector(".tablet_shilla");
+// 신라호텔 모바일 버튼 선택
+const mobileShilla = document.querySelector(".mobile_shilla");
 // 아파트멘터리 태블릿 버튼 선택
 const tabletApt = document.querySelector(".tablet_apt");
 // 아파트멘터리 모바일 버튼 선택
@@ -37,6 +41,16 @@ const tabletNovel = document.querySelector(".tablet_novel");
 const mobileNovel = document.querySelector(".mobile_novel");
 
 // 반응형 웹에 있는 데스크탑/태블릿/모바일 버튼을 누르면 각각의 크기에 맞는 새 창이 뜬다.
+tabletShilla.addEventListener("click",function(){
+    let url = "http://gagaclub.cafe24app.com/"; 
+    window.open(url,"tablet_shilla","width=1024px,height=1080px,left=300px,top=0px");
+    //window.open(url,"이름","크기,위치");  
+});
+mobileShilla.addEventListener("click",function(){
+    let url = "http://gagaclub.cafe24app.com/"; 
+    window.open(url,"tablet_shilla","width=500px,height=700px,left=500px,top=100px");
+    //window.open(url,"이름","크기,위치");  
+});
 tabletApt.addEventListener("click",function(){
     let url = "http://gagaclub.dothome.co.kr/apt"; 
     window.open(url,"tablet_apt","width=1024px,height=1080px,left=300px,top=0px");
@@ -44,7 +58,7 @@ tabletApt.addEventListener("click",function(){
 });
 mobileApt.addEventListener("click",function(){
     let url = "http://gagaclub.dothome.co.kr/apt"; 
-    window.open(url,"tablet_apt","width=415px,height=700px,left=500px,top=100px");
+    window.open(url,"tablet_apt","width=500px,height=700px,left=500px,top=100px");
     //window.open(url,"이름","크기,위치");  
 });
 tabletNovel.addEventListener("click",function(){
@@ -54,7 +68,7 @@ tabletNovel.addEventListener("click",function(){
 });
 mobileNovel.addEventListener("click",function(){
     let url = "http://gagaclub.dothome.co.kr/novel"; 
-    window.open(url,"tablet_apt","width=415px,height=700px,left=500px,top=100px");
+    window.open(url,"tablet_apt","width=500px,height=700px,left=500px,top=100px");
     //window.open(url,"이름","크기,위치");  
 });
 
