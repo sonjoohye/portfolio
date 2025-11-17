@@ -117,7 +117,7 @@ body {line-height: 1; font-size: 13px; color: #333; }
 .circle .inner .count {position: absolute; left:50%; top:50%; transform: translate(-50%,-50%);}
 
 /* 프로젝트 내역 */
-.project {background: #fcfafa; height:100vh; position: relative; padding:150px 0 30px;
+.project {background: #fcfafa; height:auto; position: relative; padding:150px 0 30px;
           border-bottom: 1px solid #eaeaea;}
 .project .title_box {text-align: center; margin-bottom:70px;}
 .project .title_box > h2 {font-size: 50px; color: #333; }
